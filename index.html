@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Food Order App</h1>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="https://b.zmtcdn.com/data/pictures/6/19418776/09e7e40ef2591f14cf7649dfe2a4fddf_o2_featured_v2.jpg" alt="Biryani">
+        <div class="item-info">
+          <h3>Biryani</h3>
+          <p>500</p>
+          <button class="add-to-cart" data-name="Biryani" data-price="500">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.marionskitchen.com/wp-content/uploads/2022/11/Sichuan-Chilli-Chicken-Noodles-01-1200x900.jpg" alt="chicken noodles">
+        <div class="item-info">
+          <h3>chicken noodles</h3>
+          <p>300</p>
+          <button class="add-to-cart" data-name="chicken noodles" data-price="300">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-yEQFkBTlySNv8Y-Vr-sdATg1tzy_kO2rg&s" alt="french fries">
+        <div class="item-info">
+          <h3>french fries</h3>
+          <p>180</p>
+          <button class="add-to-cart" data-name="french fries" data-price="180">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items">
+      </ul>
+      <p>Total: $<span id="total-price">0.00</span></p>
+      <button id="place-order" disabled>Place Order</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
